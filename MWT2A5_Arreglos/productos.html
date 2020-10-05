@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arreglos</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="shortcut icon" href="../img/favicon/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="container a">
+        <div class="row">
+            <div class="col">
+                <h1 style="text-align: center;">Arreglos</h1>
+            </div>
+        </div>
+        <div class="row">
+            
+            <div class="col-lg-2">
+
+            </div>
+            <div class="col-lg-8" style="justify-content: center;">
+                <p>
+                    <a class="btn btn-secondary" href="#" onclick="arreglo(1)" role="button">  Mostrar productos</a>
+                    <a class="btn btn-secondary" href="#" onclick="arreglo(2)" role="button">  Tamaño del arreglo</a>
+                    <a class="btn btn-secondary" href="#" onclick="arreglo(3)" role="button">  Meter un elemento (final)</a>
+                </p>  
+                <p>
+                    <a class="btn btn-secondary" href="#" onclick="arreglo(4)" role="button">  Meter un elemento (inicio)</a>
+                    <a class="btn btn-secondary" href="#" onclick="arreglo(5)" role="button">  Sacar elemento (final)</a>
+                    <a class="btn btn-secondary" href="#" onclick="arreglo(6)" role="button">  Sacar elemento (inicio)</a>
+                </p> 
+                <p>
+                    <a class="btn btn-secondary" href="#" onclick="arreglo(7)" role="button">  Ordenarlos</a>
+                    <a class="btn btn-secondary" href="#" onclick="arreglo(8)" role="button">  Reversa</a>
+                    <a class="btn btn-secondary" href="#" onclick="arreglo(9)" role="button">  copiar una porcion</a>
+                </p>  
+                <p>
+                    <a class="btn btn-secondary" href="#" onclick="arreglo(10)" role="button">Agregar, reemplazar y eliminar elementos. (splice)</a>
+                    <a class="btn btn-secondary" href="#" onclick="arreglo(11)" role="button">  concatenar arreglos</a>
+                </p>  
+
+            </div>
+              <div class="col-lg-2">
+
+              </div>
+        </div>
+        <div class="row">
+
+            <div class="col-12" >
+                <h3 id="producto"></h3>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h2 class="h2" style="text-align: center; margin-top: 30px;">Productos y precios</h2>
+                
+                    <p style="text-align: center;" ><span id="pro"></samp></span></p>
+                
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col">
+                <form>
+                    <div class="form-group">
+                      <label for="productonuevo">Nuevo Producto</label>
+                      <input type="text" class="form-control" id="Productonuevo" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="nuevoprecio">Precio</label>
+                      <input type="text" class="form-control" id="nuevoprecio" required>
+                    </div>
+                    <div>
+                        <a type="button" class="btn btn-secons" onclick="getNew()">Nuevo</a>
+                    </div>
+                  </form>
+                
+            </div>
+            <div class="col-2"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h2 class="h2" style="text-align: center; margin-top: 30px;">comprar</h2>
+            </div>
+        </div>
+        <div class="row">
+            
+            <div class="col-2"></div>
+            <div class="col">
+                <form class="form" style="text-align: center; color: red;"> 
+                        <p>introduce el producto</p>
+                        <select class="custom-select" id="produc" required>
+                            <option value="10"></option>
+                        <option value="0">caja chica</option>
+                        <option value="1">caja mediana</option>
+                        <option value="2">caja grande</option>
+                        <option value="3">cinta</option>
+                        <option value="4">cuerda delgada</option>
+                        <option value="5">cuerda gruesa</option>
+                        <option value="6">papel</option>
+                        <option value="7">plastico de burbuja</option>
+                        <option value="8">Tijeras</option>
+                        <option value="9">poliestireno</option>
+                        </select>  
+                            <p>ingresa la cantidad</p>
+                            <input type="text" name="cantidad" id="cant" class="form-control">
+                        <br>
+                        <p>introduce el producto</p>
+                        <select class="custom-select" id="produc1" required>
+                            <option value="10"></option>
+                            <option value="0">caja chica</option>
+                            <option value="1">caja mediana</option>
+                            <option value="2">caja grande</option>
+                            <option value="3">cinta</option>
+                            <option value="4">cuerda delgada</option>
+                            <option value="5">cuerda gruesa</option>
+                            <option value="6">papel</option>
+                            <option value="7">plastico de burbuja</option>
+                            <option value="8">Tijeras</option>
+                            <option value="9">poliestireno</option>
+                            </select>  
+                            <p>ingresa la cantidad</p>                       
+                                <input type="text" name="cantidad" id="cant1" class="form-control">
+                            <br>
+                            <p>introduce el producto</p>
+
+                            <select class="custom-select" id="produc2" required>
+                                <option value="10"></option>
+                        <option value="0">caja chica</option>
+                        <option value="1">caja mediana</option>
+                        <option value="2">caja grande</option>
+                        <option value="3">cinta</option>
+                        <option value="4">cuerda delgada</option>
+                        <option value="5">cuerda gruesa</option>
+                        <option value="6">papel</option>
+                        <option value="7">plastico de burbuja</option>
+                        <option value="8">Tijeras</option>
+                        <option value="9">poliestireno</option>
+                        </select>  
+                        <p>ingresa la cantidad</p>                       
+                            <input type="text" name="cantidad" id="cant2" class="form-control">
+                        <br>
+                        <p>introduce el producto</p>
+                        <select class="custom-select" id="produc3" required>
+                            <option value="10"></option>
+                        <option value="0">caja chica</option>
+                        <option value="1">caja mediana</option>
+                        <option value="2">caja grande</option>
+                        <option value="3">cinta</option>
+                        <option value="4">cuerda delgada</option>
+                        <option value="5">cuerda gruesa</option>
+                        <option value="6">papel</option>
+                        <option value="7">plastico de burbuja</option>
+                        <option value="8">Tijeras</option>
+                        <option value="9">poliestireno</option>
+                        </select>    
+                        <p>ingresa la cantidad</p>                 
+                            <input type="text" name="cantidad" id="cant3" class="form-control">
+                        <br>
+                        <p>introduce el producto</p>
+                        <select class="custom-select" id="produc4" required>
+                            <option value="10"></option>
+                        <option value="0">caja chica</option>
+                        <option value="1">caja mediana</option>
+                        <option value="2">caja grande</option>
+                        <option value="3">cinta</option>
+                        <option value="4">cuerda delgada</option>
+                        <option value="5">cuerda gruesa</option>
+                        <option value="6">papel</option>
+                        <option value="7">plastico de burbuja</option>
+                        <option value="8">Tijeras</option>
+                        <option value="9">poliestireno</option>
+                        </select>
+                        <p>ingresa la cantidad</p>                     
+                            <input type="text" name="cantidad" id="cant4" class="form-control">
+                        <br>
+                        <p>introduce el producto</p>
+                        <select class="custom-select" id="produc5" required>
+                            <option value="10"></option>
+                        <option value="0">caja chica</option>
+                        <option value="1">caja mediana</option>
+                        <option value="2">caja grande</option>
+                        <option value="3">cinta</option>
+                        <option value="4">cuerda delgada</option>
+                        <option value="5">cuerda gruesa</option>
+                        <option value="6">papel</option>
+                        <option value="7">plastico de burbuja</option>
+                        <option value="8">Tijeras</option>
+                        <option value="9">poliestireno</option>
+                        </select> 
+                        <p>ingresa la cantidad</p>                    
+                            <input type="text" name="cantidad" id="cant5" class="form-control">
+                        <br>
+                        <p>introduce el producto</p>
+                        <select class="custom-select" id="produc6" required>
+                            <option value="10"></option>
+                        <option value="0">caja chica</option>
+                        <option value="1">caja mediana</option>
+                        <option value="2">caja grande</option>
+                        <option value="3">cinta</option>
+                        <option value="4">cuerda delgada</option>
+                        <option value="5">cuerda gruesa</option>
+                        <option value="6">papel</option>
+                        <option value="7">plastico de burbuja</option>
+                        <option value="8">Tijeras</option>
+                        <option value="9">poliestireno</option>
+                        </select> 
+                        <p>ingresa la cantidad</p>                    
+                            <input type="text" name="cantidad" id="cant6" class="form-control">
+                        <br>
+                        <p>introduce el producto</p>
+                        <select class="custom-select" id="produc7" required>
+                            <option value="10"></option>
+                        <option value="0">caja chica</option>
+                        <option value="1">caja mediana</option>
+                        <option value="2">caja grande</option>
+                        <option value="3">cinta</option>
+                        <option value="4">cuerda delgada</option>
+                        <option value="5">cuerda gruesa</option>
+                        <option value="6">papel</option>
+                        <option value="7">plastico de burbuja</option>
+                        <option value="8">Tijeras</option>
+                        <option value="9">poliestireno</option>
+                        </select>  
+                        <p>ingresa la cantidad</p>                   
+                            <input type="text" name="cantidad" id="cant7" class="form-control">
+                        <br>
+                        <p>introduce el producto</p>
+                        <select class="custom-select" id="produc8" required>
+                            <option value="10"></option>
+                        <option value="0">caja chica</option>
+                        <option value="1">caja mediana</option>
+                        <option value="2">caja grande</option>
+                        <option value="3">cinta</option>
+                        <option value="4">cuerda delgada</option>
+                        <option value="5">cuerda gruesa</option>
+                        <option value="6">papel</option>
+                        <option value="7">plastico de burbuja</option>
+                        <option value="8">Tijeras</option>
+                        <option value="9">poliestireno</option>
+                        </select>  
+                        <p>ingresa la cantidad</p>                   
+                            <input type="text" name="cantidad" id="cant8" class="form-control">
+                        <br>
+                        <p>introduce el producto</p>
+                        <select class="custom-select" id="produc9" required>
+                            <option value="10"></option>
+                        <option value="0">caja chica</option>
+                        <option value="1">caja mediana</option>
+                        <option value="2">caja grande</option>
+                        <option value="3">cinta</option>
+                        <option value="4">cuerda delgada</option>
+                        <option value="5">cuerda gruesa</option>
+                        <option value="6">papel</option>
+                        <option value="7">plastico de burbuja</option>
+                        <option value="8">Tijeras</option>
+                        <option value="9">poliestireno</option>
+                        </select>                 
+                        <p>ingresa la cantidad</p>    
+                            <input type="text" name="cantidad" id="cant9" class="form-control">
+                        <br>
+                            <button type="button" class="btn btn-primary" name="enviar" onclick="getData()">enviar</button>
+                </form>
+            </div>
+            <div class="col-2"></div>
+        </div>
+
+
+        <div class="row">
+            <div class="col" >
+                <p id="pago" style="text-align: center;"></p>
+                <p id="costo" style="text-align: center;"></p>
+               
+            </div>
+        </div>
+        <div class="row">
+            <div class="col" >
+                <p id="pago1" style="text-align: center;"></p>
+                <p id="costo1" style="text-align: center;"></p>
+               
+            </div>
+        </div>
+        <div class="row">
+            <div class="col" >
+                <p id="pago2" style="text-align: center;"></p>
+                <p id="costo2" style="text-align: center;"></p>
+               
+            </div>
+        </div>
+        <div class="row">
+            <div class="col" >
+                <p id="pago3" style="text-align: center;"></p>
+                <p id="costo3" style="text-align: center;"></p>
+               
+            </div>
+        </div>
+        <div class="row">
+            <div class="col" >
+                <p id="pago4" style="text-align: center;"></p>
+                <p id="costo4" style="text-align: center;"></p>
+               
+            </div>
+        </div>
+        <div class="row">
+            <div class="col" >
+                <p id="pago5" style="text-align: center;"></p>
+                <p id="costo5" style="text-align: center;"></p>
+               
+            </div>
+        </div>
+        <div class="row">
+            <div class="col" >
+                <p id="pago6" style="text-align: center;"></p>
+                <p id="costo6" style="text-align: center;"></p>
+                
+            </div>
+        </div>
+        <div class="row">
+            <div class="col" >
+                <p id="pago7" style="text-align: center;"></p>
+                <p id="costo7" style="text-align: center;"></p>
+                
+            </div>
+        </div>
+        <div class="row">
+            <div class="col" >
+                <p id="pago8" style="text-align: center;"></p>
+                <p id="costo8" style="text-align: center;"></p>
+                
+            </div>
+        </div>
+        <div class="row">
+            <div class="col" >
+                <p id="pago9" style="text-align: center;"></p>
+                <p id="costo9" style="text-align: center;"></p>
+                <h4 id="total" style="text-align: center; color: white; background-color: black;"></h4>
+            </div>
+        </div>
+        
+    </div>
+    <script src="js/arreglos.js"></script>
+</body>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundanzas Mariela</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    
+</head>
+<body>
+    <header class="fondo" id="inicio">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb" >
+                <li class="col"><a href="#inicio"><img class="imagen1" src="img/mudanzas.png" alt="Mundanzas"></a></li>
+                <li class="float col-1"><a href="#somos">Quienes somos</a></li>
+                
+                <li class="float col-1"><a href="#coti">Cotizacion</a></li>
+
+                <li class="float col-1"><a href="#con">Contacto</a></li>
+            </ol>
+        </nav>
+        <div class="titulo">
+            <h1>Mundanzas</h1>
+            <h2>Lorem ipsum dolor sit.</h2>
+            <br>
+            <div>
+                <p><span id="dd"></span> / <span id="mm"></span> / <span id="yyyy"></span></p>
+                <p><span id="hh"></span> : <span id="sm"></span> : <span id="ss"></span></p>    
+            </div>
+            <br>
+            <button class="btn btn-lg btn-outline-dark">conocer mas <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-11.5.5a.5.5 0 0 1 0-1h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5z"/>
+              </svg></button>
+            
+            
+        </div>
+    </header>
+    <div class="container a">
+        <div class="row" id="somos">
+
+            <div class="col-6">
+                <img class="quienes mx-auto d-block" src="img/mudanzasquienes.png" alt="">
+                
+            </div>
+            <div class="col-6">
+                <h1>Quienes somos...</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptate vel saepe ducimus corporis culpa veritatis porro distinctio ut corrupti repellat, iure cumque quae veniam? Vero ea rerum necessitatibus in!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptate vel saepe ducimus corporis culpa veritatis porro distinctio ut corrupti repellat, iure cumque quae veniam? Vero ea rerum necessitatibus in!</p>
+                <br>
+                <button type="button" class="btn btn-secondary btn-lg" onclick="saber()">clic para saber mas de nosotros...</button>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="container a"  id="coti">
+
+       
+        <div class="row">
+          <div class="col-lg-4">
+            <img class="mun" src="img/mudanza-.png" alt="">
+            <h2>Paso 1.</h2>
+            <p>Cuéntanos tu proyecto de mudanza foránea de casa. Puedes incluir fotografías.</p>
+            
+          </div>
+          <div class="col-lg-4">
+            <img class="mun" src="img/mudanza-.png" alt="">
+            <h2>Paso 2.</h2>
+            <p>Los mejores profesionales y empresas de mudanza foránea de casa recibirán un aviso de tu proyecto.</p>
+          </div>
+          <div class="col-lg-4">
+            <img class="mun" src="img/mudanza-.png" alt="">
+            <h2>Paso 3.</h2>
+            <p>Aquellos que estén interesados se pondrán en contacto contigo para pasarte una cotización.</p>
+            
+          </div>            
+        </div>
+        <div class="row">
+            <div class="col-lg-2">
+
+            </div>
+            <div class="col-lg-8">
+                <p><a class="btn btn-secondary  btn-block" href="#" onclick="cotizacion()" role="button">Pide tu cotizacion gratis &raquo;</a></p>  
+
+            </div>
+              <div class="col-lg-2">
+
+              </div>
+        </div>
+    </div>
+    <div class="container a">
+        <div class="row">
+            <div class="col">
+                <h2 class="h2" style="text-align: center; margin-top: 30px;">Productos de Venta</h2>
+                <table class="table table-hover" style="text-align: center;">
+                    <thead>
+                        <tr>
+                          <th>Prodctos</th>
+                          <th>Precio por pieza</th>
+                          <th>Imagenes</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>caja chicas</td>
+                          <td>$5.00 </td>
+                          <td><img src="img/cajas/cajachica.jpeg" class="mun1" alt="caja chica"></td>
+                        </tr>
+                        <tr>
+                            <td>caja mediana</td>
+                            <td>$11.00 </td>
+                            <td><img src="img/cajas/cajamediana.jpg" class="mun1" alt="caja mediana"></td>
+                        </tr>
+                        <tr>
+                            <td>caja grande</td>
+                            <td>$20.00 </td>
+                            <td><img src="img/cajas/cajagrande.jpg" class="mun1" alt="caja grande"></td>
+                        </tr>
+                      </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2">
+
+            </div>
+            <div class="col-lg-8">
+                <p><a class="btn btn-secondary  btn-block" href="#" onclick="precio()" role="button">  Comprar&raquo;</a></p>  
+
+            </div>
+              <div class="col-lg-2">
+
+              </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2">
+
+            </div>
+            <div class="col-lg-8">
+                <p><a class="btn btn-secondary  btn-block" href="/MWT2A5_Arreglos/productos.html" role="button"> arreglos&raquo;</a></p>  
+
+            </div>
+              <div class="col-lg-2">
+
+              </div>
+        </div>
+    </div>
+    
+    
+    <div class="container a">
+        <div class="row" id="paquete">
+            <div class="col titulo1">
+                <h2>Vehiculos</h2>
+            </div>
+            <div class="contenedor">
+                <div class="cuadro">
+                    <img src="img/paquetes.jpg" alt="">
+                    <h4>Lorem, ipsum dolor.</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis possimus dolor totam doloribus odit alias perspiciatis accusantium, quos molestias repellat quibusdam voluptates quisquam. Maiores beatae corrupti, provident alias obcaecati omnis.</p>
+                    <a class="btn" href="">saber mas...</a>
+                </div>
+                <div class="cuadro">
+                    <img src="img/paquetes.jpg" alt="">
+                    <h4>Lorem, ipsum dolor.</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis possimus dolor totam doloribus odit alias perspiciatis accusantium, quos molestias repellat quibusdam voluptates quisquam. Maiores beatae corrupti, provident alias obcaecati omnis.</p>
+                    <a class="btn" href="">saber mas...</a>
+                </div>
+            </div>
+            <div class="contenedor">
+                <div class="cuadro">
+                    <img src="img/paquetes.jpg" alt="">
+                    <h4>Lorem, ipsum dolor.</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis possimus dolor totam doloribus odit alias perspiciatis accusantium, quos molestias repellat quibusdam voluptates quisquam. Maiores beatae corrupti, provident alias obcaecati omnis.</p>
+                    <a class="btn" href="">saber mas...</a>
+                </div>
+                <div class="cuadro">
+                    <img src="img/paquetes.jpg" alt="">
+                    <h4>Lorem, ipsum dolor.</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis possimus dolor totam doloribus odit alias perspiciatis accusantium, quos molestias repellat quibusdam voluptates quisquam. Maiores beatae corrupti, provident alias obcaecati omnis.</p>
+                    <a class="btn" href="">saber mas...</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="container a" id="con">
+        <div class="row b">
+            <div class="col">
+            <p>Author: JM<br>
+            <a href="mailto:eeee@example.com">eeee@example.com</a> <br> 
+            5555555555</p>
+
+            </div>
+
+        </div>
+        <div class="row b">
+            <div class="col">
+                <form ><!--action="" method="post"-->
+                    <div class="form-group">
+                        <label for="">Si quieres que nosotros te contactemos envianos tu correo</label><br>
+                        <input type="email" class="form-control colores" name="correo" id="correo" required>
+                    </div>
+                    <button class="btn btn-outline-dark" type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+
+
+    </div>
+    <script src="js/javascript.js"></script>
+</body>
+</html>
